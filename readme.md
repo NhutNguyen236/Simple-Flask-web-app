@@ -1,4 +1,4 @@
-![ss](/assets/img/deno.png)
+![ss](./static/assets/img/demo.png)
 
 # References
 - Simple Flask app by [Python Simplified](youtube.com/watch?v=6plVs_ytIH8)
