@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to Toubie thing</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+        <!--using static assets to store images and videos-->
+        <img src="/static/assets/img/greet.png" alt="toubie greeting image">
+        <br>
+        <form action="hello" method="POST">
+            {% for message in get_flashed_messages() %}
+                <p>{{ message }}</p>
+            {% endfor %}
+            <br>
+            <input type="text" name="name_input">
+            <br>
+            <input type="submit" value="GREET" id="greet_button">
+        </form>
+    </body>
+</html>
