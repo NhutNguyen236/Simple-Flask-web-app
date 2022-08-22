@@ -5,8 +5,6 @@ app = Flask(__name__)
 app.secret_key = "hello world shinobi"
 
 # greeting route
-
-
 @app.route('/')
 def index():
     # get flash messages
